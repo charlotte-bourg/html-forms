@@ -36,32 +36,47 @@
         </table>
         <h2>Order Form</h2>
         <form>
-            Your name
-            <input type="text" name="name">
+            <label for="name">Your name</label>
+            <input type="text" name="name" id="name">
             <br>
             <br>
-            Who are we sending this to?
-            <input type="text" name="recipient">
+            <label for="recipient">Who are we sending this to?</label>
+            <input type="text" name="recipient" id="recipient">
             <br>
             <br>
-            Choose a melon
-            <select name="melon">
+            <label for="melon">Choose a melon</label>
+            <select name="melon" id="melon">
                 <option value="watermelon">Watermelon</option>
                 <option value="canteloupe">Canteloupe</option>
                 <option value="honeydew">Honeydew</option>
             </select>
             <br>
             <br>
-            When should we deliver?
-            <input type="radio" name="time" value="am">Morning">
-        Morning
-        Evening
-        Any time
-
-        Enter your message:
+            <fieldset>
+                <legend>When should we deliver?</legend>
+                <input type="radio" name="time" value="am" id="am">
+                <label for="am">Morning</label>
+                <input type="radio" name="time" value="pm" id="pm">
+                <label for="pm">Evening</label>
+                <input type="radio" name="time" value="any" id="any">
+                <label for="any">Any time</label>
+            </fieldset>
+            <br>
+            <br>
+        <label for="message">Enter your message:</label>
+        <br>
+        <textarea name="message" id="message"></textarea>
+        <br>
+        <br>
+        <fieldset>
+            <legend>Subscribe to our newsletter</legend>
+            <input type="checkbox" name="subscribe" value="yes" id="yes">
+            <label for="yes">Yes</label>
+        </fieldset>
+        <br>
+        <br>
+        <button type="submit">Submit</button>
         </form>
-        Subscribe to our newsletter
-        Yes
     </body> 
 
 </html>
